@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+    <div th:fragment="head">
+        <meta charset="UTF-8" />
+        <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+        <link th:href="@{/css/style.css}" rel="stylesheet">
+    </div>
+</head>
+<body>
+
+<nav th:fragment="navbar" class="navbar navbar-default">
+    <!-- awesome navbar goes here -->
+    <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/hello">Hello</a></li>
+    </ul>
+</nav>
+
+<standard_scripts th:fragment="footer">
+    <script th:src="@{/js/jquery-3.4.1.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+</standard_scripts>
+
+
+</body>
+</html>
