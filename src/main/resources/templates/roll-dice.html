@@ -2,7 +2,14 @@
 <head th:replace="partials/partials :: head"></head>
 <body>
 <nav th:replace="partials/partials :: navbar"></nav>
-<h1>Welcome To My Site!</h1>
+<h1>Dice Rolling</h1>
+
+<h1 th:text="${n}"></h1>
+
+<form action="/roll-dice" method="post">
+    <input type="text" name="userRoll" id="diceRoll" class="field" />
+    <button>Roll!</button>
+</form>
 
 <footer th:replace="partials/partials :: footer"></footer>
 </body>
